@@ -1,0 +1,51 @@
+<head>
+    <style>
+        body{
+            background-color: #757575;
+            text-align: center
+        }
+        h1{
+            color: #303030;
+            margin-top: 50px;
+            font-size: 100px
+        }
+        span{
+            color: #d1d1d1;
+        }
+        /* textarea{
+            position: relative; */
+        /* } */
+        a{
+            display: block;
+            margin: 30px;
+            /* position: absolute;
+            left: 35px;
+            top: 184px; */
+
+        }
+        input{
+            margin: 20px;
+        }
+        a:link{
+            color: white;
+        }
+        a:visited{
+            color: #d1d1d1;
+        }
+        a:hover{
+            color: #f96666;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><span>W</span>ord <span>C</span>ount</h1>
+
+    <a href="{% url 'ABOUT'%}">워드카운트가 뭔가요?</a>
+
+    <form action="{% url 'count' %}">
+        <textarea name="fulltext" cols="80" rows="25"></textarea>
+        <br>
+        <input type="submit" value="COUNTI">
+    </form>
+</body>

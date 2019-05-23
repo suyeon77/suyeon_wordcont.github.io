@@ -1,0 +1,42 @@
+<head>
+    <style>
+    body{
+        text-align: center;
+        background-color: #353535;
+    }
+    h1{
+        margin: 30px;
+        color: #c1c1c1;
+        font-size: 100px;
+
+    }
+    span{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+    a{  
+        display: block;
+        margin: 50px;
+    }
+    a:link{
+            color: white;
+        }
+    a:visited{
+            color: #d1d1d1;
+        }
+    a:hover{
+            color: #f96666;
+        }
+    </style>
+
+</head>
+<body>
+    <h1><span>A</span>bout</h1>
+
+    <p>워드카운트에 문장을 쓰면</p>
+    <p>단어의 갯수를 알려줘요.</p>
+
+    <a href="{% url 'home' %}">home</a>
+</body>
